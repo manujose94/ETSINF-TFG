@@ -1,0 +1,15 @@
+{
+  "name": "coreaas",
+  "version": "1.0.0",
+  "description": "implementation AAS I4.0",
+  "main": "sample3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sample3.js"
+  },
+  "author": "Manu",
+  "license": "ISC",
+  "dependencies": {
+    "node-opcua-coreaas": "^0.2.2"
+  }
+}
