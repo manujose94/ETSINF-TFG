@@ -1,0 +1,273 @@
+{
+  "assetAdministrationShells": [
+    {
+      "identification": {
+        "id": "www.admin-shell.io/aas-sample/1.0",
+        "idType": "URI"
+      },
+      "asset": {
+        "keys": [
+          {
+            "type": "Asset",
+            "idType": "URI",
+            "value":"http://pk.festo.com/3S7PLFDRS35",
+            "local": true,
+            "index": 0 #All ordered Collections including Keys have an index. The first object in the Collection has the index 0.
+          }
+        ]
+      },
+      "submodels": [
+        {
+          "keys": [
+            {
+              "type": "Submodel",
+              "idType": "URI",
+              "value":"http://www.zvei.de/demo/submodel/12345679",
+              "local": true,
+              "index": 0
+            }
+          ]
+        }
+      ],
+      "views": [
+        {
+          "idShort": "SampleView",
+          "containedElements": [
+            {
+              "keys": [
+                {
+                  "type": "Property",
+                  "idType": "IdShort",
+                  "value": "rotationSpeed",
+                  "local": true,
+                  "index": 0
+                }
+              ]
+            }
+          ],
+          "modelType": {
+            "name": "View"
+          }
+        }
+      ],
+      "administration": {
+        "version": "1",
+        "revision": "0"
+      },
+      "modelType": {
+        "name": "AssetAdministationShell"
+      },
+      "conceptDictionaries": [
+        {
+          "conceptDescriptions": [
+            {
+              "keys": [
+                {
+                  "type": "ConceptDescription",
+                  "idType": "URI",
+                  "value":"www.festo.com/dic/08111234",
+                  "local": true,
+                  "index": 0
+                }
+              ]
+            },
+            {
+              "keys": [
+                {
+                  "type": "ConceptDescription",
+                   "idType": "IRDI",
+                  "value": "0173-1#02-BAA120#007",
+                  "local": true,
+                  "index": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "identification": {#mandatory
+        "id":"http://www.zvei.de/demo/submodel/12345679",
+        "idType": "URI"
+      },
+      "kind": "Instance",#mandatory
+      "semanticId": {
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "idType": "URI",
+            "value":"http://www.zvei.de/demo/submodelDefinitions/87654346",
+            "local": false,
+            "index": 0
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "temperature",
+          "modelType": { #mandatory each object
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": "int"
+            }
+          },
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "idType": "URI",
+                "value":"www.festo.com/dic/08111234",
+                "local": true,
+                "index": 0
+              }
+            ]
+          },
+          "category": "VARIABLE"
+        },
+        {
+          "idShort": "temperature type",
+          "modelType": {
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": "enum" #ENUM_CODE_TYPE(0112/2///61360_4#ASA124)
+            }
+          },
+          "value": {
+                "text": "T_amb"
+          },
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "idType": "IRDI",
+                "value": "	0112/2///61360_4#AAE683#001",
+                "local": true,
+                "index": 0
+              }
+            ]
+          },
+          "category": "PARAMETER" # property that is once set and then typically  does not change over time.
+        }
+      ],
+      "modelType": {
+        "name": "Submodel"
+      }
+      }], #A Submodel defines a specific aspect of the asset represented by the AAS.
+  "assets": [
+    {
+      "idShort": "3S7PLFDRS35", #mandatory
+      "identification": { #mandatory
+        "id": "http://pk.festo.com/3S7PLFDRS35",#Referncia a nivel superior 3S7PLFDRS35
+        "idType": "URI" # URLs will be used
+      },
+      "kind": "Instance",#mandatory
+      "descriptions": [ #optional
+        {
+          "text":"Sensor Temperatura",
+          "language":"ES"
+        },
+        {
+          "language": "EN",
+          "text": "Temperature Sensor"
+        }
+      ],
+      "modelType": { #mandatory
+        "name": "Asset" # Para cada Objeto, su nombre de clase
+      }
+    }
+  ], #An Asset describes meta data of an asset that is represented by an AAS.
+  "conceptDescriptions": [ #Data Specification Templates are directly added to the Concept Description
+    {
+      "embeddedDataSpecifications": [
+        {
+          "hasDataSpecification": { #Global reference to the data specification identifier
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "idType": "URI",
+                "value": "www.admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360",
+                "local": false,
+                "index": 0
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": {
+              "language": "EN",
+              "text": "temperature"
+            },
+            "shortName": "@T",
+            "unitId": {
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "idType": "IRDI",
+                  "value": "0112/2///61360_4#AAE685#001",
+                  "local": false,
+                  "index": 0
+                }
+              ]
+            },
+            "valueFormat": "NR1 S..4"
+          }
+        }
+      ],
+      "identification": {
+        "id": "",
+        "idType": "URI"
+      },
+      "modelType": {
+        "name": "ConceptDescription"
+      }
+    },
+    {
+      "embeddedDataSpecifications": [ #the content of the data specification.
+        {
+          "hasDataSpecification": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "idType": "URI",
+                "value": "www.admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360",
+                "local": false,
+                "index": 0
+              }    ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": {
+              "language": "EN",
+              "text": "temperature type"
+            },
+            "shortName": "@T type",
+            "unitId": {
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "idType": "IRDI",
+                  "value": "0112/2///61360_4#AAE683#001",
+                  "local": false,
+                  "index": 0
+                }
+              ]
+            },
+            "valueFormat": "	M..8"
+          }
+        }
+      ],
+      "identification": {
+        "id": "",
+        "idType": "IRDI"
+      },
+      "modelType": {
+        "name": "ConceptDescription"
+      }
+    }
+  ] # Diccionarios y descripciones de elementos
+}

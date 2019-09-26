@@ -1,0 +1,406 @@
+{
+    "name": {
+        "namespaceURI": "http://www.admin-shell.io/aas/1/0",
+            "localPart": "aasenv",
+                "prefix": "aas",
+                    "key": "{http://www.admin-shell.io/aas/1/0}aasenv",
+                        "string": "{http://www.admin-shell.io/aas/1/0}aas:aasenv"
+    },
+    "value": {
+        "TYPE_NAME": "AAS.AasenvT",
+            "assetAdministrationShells": {
+            "TYPE_NAME": "AAS.AssetAdministrationShellsT",
+                "assetAdministrationShell": [
+                    {
+                        "TYPE_NAME": "AAS.AssetAdministrationShellT",
+                        "identification": {
+                            "TYPE_NAME": "AAS.IdentificationT",
+                            "idType": "URI",
+                            "value": "www.admin-shell.io/aas-sample/1/0"
+                        },
+                        "administration": {
+                            "TYPE_NAME": "AAS.AdministrationT",
+                            "version": "1",
+                            "revision": "0"
+                        },
+                        "assetRef": {
+                            "TYPE_NAME": "AAS.ReferenceT",
+                            "keys": {
+                                "TYPE_NAME": "AAS.KeysT",
+                                "key": [
+                                    {
+                                        "TYPE_NAME": "AAS.KeyT",
+                                        "type": "Asset",
+                                        "local": false,
+                                        "idType": "URI",
+                                        "value": "http://pk.festo.com/3s7plfdrs35"
+                                    }
+                                ]
+                            }
+                        },
+                        "submodelRefs": {
+                            "TYPE_NAME": "AAS.SubmodelRefsT",
+                            "submodelRef": [
+                                {
+                                    "TYPE_NAME": "AAS.ReferenceT",
+                                    "keys": {
+                                        "TYPE_NAME": "AAS.KeysT",
+                                        "key": [
+                                            {
+                                                "TYPE_NAME": "AAS.KeyT",
+                                                "type": "Submodel",
+                                                "local": true,
+                                                "idType": "URI",
+                                                "value": "\"http://www.zvei.de/demo/submodel/12345679\""
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "views": {
+                            "TYPE_NAME": "AAS.ViewsT",
+                            "view": [
+                                {
+                                    "TYPE_NAME": "AAS.ViewT",
+                                    "idShort": {
+                                        "TYPE_NAME": "AAS.IdShortT",
+                                        "value": "SampleView"
+                                    },
+                                    "containedElements": {
+                                        "TYPE_NAME": "AAS.ContainedElementsT",
+                                        "containedElementRef": {
+                                            "TYPE_NAME": "AAS.ReferenceT",
+                                            "keys": {
+                                                "TYPE_NAME": "AAS.KeysT",
+                                                "key": [
+                                                    {
+                                                        "TYPE_NAME": "AAS.KeyT",
+                                                        "type": "Submodel",
+                                                        "local": true,
+                                                        "idType": "URI",
+                                                        "value": "\"http://www.zvei.de/demo/submodel/12345679\""
+                                                    },
+                                                    {
+                                                        "TYPE_NAME": "AAS.KeyT",
+                                                        "type": "Property",
+                                                        "local": true,
+                                                        "idType": "idShort",
+                                                        "value": "rotationSpeed"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "conceptDictionaries": {
+                            "TYPE_NAME": "AAS.ConceptDictionariesT",
+                            "conceptDictionary": [
+                                {
+                                    "TYPE_NAME": "AAS.ConceptDictionaryT",
+                                    "idShort": {
+                                        "TYPE_NAME": "AAS.IdShortT",
+                                        "value": "SampleDic"
+                                    },
+                                    "conceptDescriptionRefs": {
+                                        "TYPE_NAME": "AAS.ConceptDescriptionsRefT",
+                                        "conceptDescriptionRef": [
+                                            {
+                                                "TYPE_NAME": "AAS.ReferenceT",
+                                                "keys": {
+                                                    "TYPE_NAME": "AAS.KeysT",
+                                                    "key": [
+                                                        {
+                                                            "TYPE_NAME": "AAS.KeyT",
+                                                            "type": "ConceptDescription",
+                                                            "local": true,
+                                                            "idType": "URI",
+                                                            "value": "www.festo.com/dic/08111234"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "TYPE_NAME": "AAS.ReferenceT",
+                                                "keys": {
+                                                    "TYPE_NAME": "AAS.KeysT",
+                                                    "key": [
+                                                        {
+                                                            "TYPE_NAME": "AAS.KeyT",
+                                                            "type": "ConceptDescription",
+                                                            "local": true,
+                                                            "idType": "IRDI",
+                                                            "value": "0173-1#02-BAA120#007"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+        },
+        "assets": {
+            "TYPE_NAME": "AAS.AssetsT",
+                "asset": [
+                    {
+                        "TYPE_NAME": "AAS.AssetT",
+                        "idShort": {
+                            "TYPE_NAME": "AAS.IdShortT",
+                            "value": "3s7plfdrs35"
+                        },
+                        "description": {
+                            "TYPE_NAME": "AAS.LangStringsT",
+                            "langString": [
+                                {
+                                    "TYPE_NAME": "AAS.LangStringT",
+                                    "lang": "EN",
+                                    "value": "Festo Controller"
+                                }
+                            ]
+                        },
+                        "identification": {
+                            "TYPE_NAME": "AAS.IdentificationT",
+                            "idType": "URI",
+                            "value": "http://pk.festo.com/3s7plfdrs35"
+                        },
+                        "kind": "Instance"
+                    }
+                ]
+        },
+        "submodels": {
+            "TYPE_NAME": "AAS.SubmodelsT",
+                "submodel": [
+                    {
+                        "TYPE_NAME": "AAS.SubmodelT",
+                        "identification": {
+                            "TYPE_NAME": "AAS.IdentificationT",
+                            "idType": "URI",
+                            "value": "http://www.zvei.de/demo/submodel/12345679"
+                        },
+                        "semanticId": {
+                            "TYPE_NAME": "AAS.SemanticIdT",
+                            "keys": {
+                                "TYPE_NAME": "AAS.KeysT",
+                                "key": [
+                                    {
+                                        "TYPE_NAME": "AAS.KeyT",
+                                        "idType": "URI",
+                                        "local": false,
+                                        "type": "Submodel",
+                                        "value": "http://www.zvei.de/demo/submodelDefinitions/87654346"
+                                    }
+                                ]
+                            }
+                        },
+                        "kind": "Instance",
+                        "submodelElements": {
+                            "TYPE_NAME": "AAS.SubmodelElementsT",
+                            "submodelElement": [
+                                {
+                                    "TYPE_NAME": "AAS.SubmodelElementT",
+                                    "property": {
+                                        "TYPE_NAME": "AAS.PropertyT",
+                                        "idShort": {
+                                            "TYPE_NAME": "AAS.IdShortT",
+                                            "value": "rotationSpeed"
+                                        },
+                                        "category": "VARIABLE",
+                                        "semanticId": {
+                                            "TYPE_NAME": "AAS.SemanticIdT",
+                                            "keys": {
+                                                "TYPE_NAME": "AAS.KeysT",
+                                                "key": [
+                                                    {
+                                                        "TYPE_NAME": "AAS.KeyT",
+                                                        "idType": "URI",
+                                                        "type": "ConceptDescription",
+                                                        "local": true,
+                                                        "value": "www.festo.com/dic/08111234"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "valueType": "double"
+                                    }
+                                },
+                                {
+                                    "TYPE_NAME": "AAS.SubmodelElementT",
+                                    "property": {
+                                        "TYPE_NAME": "AAS.PropertyT",
+                                        "idShort": {
+                                            "TYPE_NAME": "AAS.IdShortT",
+                                            "value": "NMAX"
+                                        },
+                                        "category": "PARAMETER",
+                                        "semanticId": {
+                                            "TYPE_NAME": "AAS.SemanticIdT",
+                                            "keys": {
+                                                "TYPE_NAME": "AAS.KeysT",
+                                                "key": [
+                                                    {
+                                                        "TYPE_NAME": "AAS.KeyT",
+                                                        "idType": "IRDI",
+                                                        "type": "GlobalReference",
+                                                        "local": true,
+                                                        "value": "0173-1#02-BAA120#007"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "valueType": "double",
+                                        "value": {
+                                            "TYPE_NAME": "AAS.PropertyValueTypeT",
+                                            "value": "2000"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+        },
+        "conceptDescriptions": {
+            "TYPE_NAME": "AAS.ConceptDescriptionsT",
+                "conceptDescription": [
+                    {
+                        "TYPE_NAME": "AAS.ConceptDescriptionT",
+                        "identification": {
+                            "TYPE_NAME": "AAS.IdentificationT",
+                            "idType": "URI",
+                            "value": "www.festo.com/dic/08111234"
+                        },
+                        "embeddedDataSpecification": [
+                            {
+                                "TYPE_NAME": "AAS.EmbeddedDataSpecificationT",
+                                "hasDataSpecification": {
+                                    "TYPE_NAME": "AAS.ReferenceT",
+                                    "keys": {
+                                        "TYPE_NAME": "AAS.KeysT",
+                                        "key": [
+                                            {
+                                                "TYPE_NAME": "AAS.KeyT",
+                                                "idType": "URI",
+                                                "local": false,
+                                                "type": "GlobalReference",
+                                                "value": "www.adminshell.io/DataSpecificationTemplates/DataSpecificationIEC61360"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "dataSpecificationContent": {
+                                    "TYPE_NAME": "AAS.DataSpecificationContentT",
+                                    "dataSpecificationIEC61360": {
+                                        "TYPE_NAME": "AAS.DataSpecificationIEC61630T",
+                                        "preferredName": {
+                                            "TYPE_NAME": "AAS.LangStringsT",
+                                            "langString": [
+                                                {
+                                                    "TYPE_NAME": "AAS.LangStringT",
+                                                    "lang": "DE",
+                                                    "value": "Drehzahl"
+                                                },
+                                                {
+                                                    "TYPE_NAME": "AAS.LangStringT",
+                                                    "lang": "EN",
+                                                    "value": "Rotation Speed"
+                                                }
+                                            ]
+                                        },
+                                        "shortName": "N",
+                                        "unitId": {
+                                            "TYPE_NAME": "AAS.ReferenceT",
+                                            "keys": {
+                                                "TYPE_NAME": "AAS.KeysT",
+                                                "key": [
+                                                    {
+                                                        "TYPE_NAME": "AAS.KeyT",
+                                                        "local": false,
+                                                        "type": "GlobalReference",
+                                                        "idType": "IRDI",
+                                                        "value": "0173-1#05-AAA650#002"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "valueFormat": "NR1..5"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "TYPE_NAME": "AAS.ConceptDescriptionT",
+                        "identification": {
+                            "TYPE_NAME": "AAS.IdentificationT",
+                            "idType": "IRDI",
+                            "value": "0173-1#02-BAA120#007"
+                        },
+                        "embeddedDataSpecification": [
+                            {
+                                "TYPE_NAME": "AAS.EmbeddedDataSpecificationT",
+                                "hasDataSpecification": {
+                                    "TYPE_NAME": "AAS.ReferenceT",
+                                    "keys": {
+                                        "TYPE_NAME": "AAS.KeysT",
+                                        "key": [
+                                            {
+                                                "TYPE_NAME": "AAS.KeyT",
+                                                "idType": "URI",
+                                                "type": "GlobalReference",
+                                                "local": false,
+                                                "value": "www.admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "dataSpecificationContent": {
+                                    "TYPE_NAME": "AAS.DataSpecificationContentT",
+                                    "dataSpecificationIEC61360": {
+                                        "TYPE_NAME": "AAS.DataSpecificationIEC61630T",
+                                        "preferredName": {
+                                            "TYPE_NAME": "AAS.LangStringsT",
+                                            "langString": [
+                                                {
+                                                    "TYPE_NAME": "AAS.LangStringT",
+                                                    "lang": "DE",
+                                                    "value": "maximale Drehzahl"
+                                                },
+                                                {
+                                                    "TYPE_NAME": "AAS.LangStringT",
+                                                    "lang": "EN",
+                                                    "value": "max rotation speed"
+                                                }
+                                            ]
+                                        },
+                                        "shortName": "NMax",
+                                        "unitId": {
+                                            "TYPE_NAME": "AAS.ReferenceT",
+                                            "keys": {
+                                                "TYPE_NAME": "AAS.KeysT",
+                                                "key": [
+                                                    {
+                                                        "TYPE_NAME": "AAS.KeyT",
+                                                        "type": "GlobalReference",
+                                                        "idType": "IRDI",
+                                                        "local": false,
+                                                        "value": "0173-1#05-AAA650#002"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "valueFormat": "NR1..5"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+        }
+    }
+}
