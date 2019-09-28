@@ -35,6 +35,7 @@ You can found 3 demo files in [the project](https://github.com/manujose94/ETSINF
 ## Getting started
 ### Project Ionic and Backend
 For use this project only need decompress following packages:
+
 | Name | Type | Dependencies  |
 |--|--|--|
 | discomcloud-ionic | client | Ionic v3|
@@ -66,11 +67,13 @@ $ npm install node-opcua-coreaas --save
 ```
 ## Running
 In root folder project:
+
 | Sample | Command |
 |--|--|
 | sample1 | npm run sample1 |
 | sample2 | npm run sample2 |
 | sample3 | npm run sample3 |
+
 ### Minimum nodejs requirement
 -   nodejs version 6.10 or above
 ### API Documentation node-opcua
