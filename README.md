@@ -93,8 +93,11 @@ When one sample is launched it shows the information in the terminal:
      opc.tcp://LAPTOPLL2T36MU:26544/ua/resource
 
 Add a server with addres that shows it:
+
 ![enter image description here](https://github.com/manujose94/ETSINF-TFG/blob/master/Projects%20Documents/Images/addserver.PNG?raw=true)
+
 View data log:
+
 ![enter image description here](https://github.com/manujose94/ETSINF-TFG/blob/master/Projects%20Documents/Images/image49.png?raw=true)
 OPC UA client software: [UA Expert](https://www.unified-automation.com/products/development-tools/uaexpert.html)
 
