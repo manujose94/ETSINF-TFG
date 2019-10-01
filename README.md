@@ -3,7 +3,9 @@
 __TFG DOCUMENTATION__
 =================
 
-
+Server is now listening ... ( press CTRL+C to stop)
+port  26544
+ the primary server endpoint url is  opc.tcp://LAPTOP-LL2T36MU:26544/ua/resource
 ## __Folder Structure__
 
 This project content a diferent folder content, in order to sperate teoric and practical content.
