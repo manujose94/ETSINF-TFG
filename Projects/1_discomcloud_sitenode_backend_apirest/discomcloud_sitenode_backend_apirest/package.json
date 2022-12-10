@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "jsonix": "^3.0.0",
     "jsonix-schema-compiler": "^2.3.9",
     "node-datetime": "^2.1.2",
