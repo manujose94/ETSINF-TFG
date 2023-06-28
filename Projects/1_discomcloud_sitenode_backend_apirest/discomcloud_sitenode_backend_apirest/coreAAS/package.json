@@ -10,6 +10,6 @@
   "author": "Manu",
   "license": "ISC",
   "dependencies": {
-    "node-opcua-coreaas": "^0.2.2"
+    "node-opcua-coreaas": "^1.1.0"
   }
 }
